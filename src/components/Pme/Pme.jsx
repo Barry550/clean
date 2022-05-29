@@ -1,4 +1,6 @@
+
 import React, { useState } from 'react'
+import Menu from '../Header/Menu'
 import Modale from './Modale'
 
 
@@ -6,7 +8,6 @@ import "./pme.css"
 
 import PmeRamassage from './PmeRamassage'
 import PmeRecyclage from './PmeRecyclage'
-// import  { DemoCarousel } from './DemoCarousel'
 
 
 export default function Pme() {
@@ -14,9 +15,10 @@ export default function Pme() {
   const [search, setSearch] = useState('Toute les PME')
   return (
     <div className="conteneur">
+      <Menu/>
       <div className='pme-header'>
             <h1>Des pme a votre disposition pour vos services en <span>nettoyage</span> et <span>recyclage</span></h1>
-            <p>Choisissez La Pme Qui Vous COnvient Et Abonnez Vous</p>
+            <p>Choisissez La Pme Qui Vous Convient Et Abonnez Vous</p>
       </div>
       <div className='barre'>
       <form className="formulaire-search  d-inline-flex ">

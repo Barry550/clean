@@ -1,4 +1,17 @@
 
+.conteneur2-abonnement{
+   align-items: center;
+   justify-content: center;
+   padding-left: 22rem;
+   padding-right: 20rem;
+
+
+}
+
+.p1{
+    padding-left: 1.5rem;
+    width: 55rem;
+}
 .abonnement-titre{
     text-transform: uppercase;
     width: 42rem;
@@ -12,14 +25,9 @@
     font-style: normal;
     font-weight: 350;
 }
-
-.bloc-image{
-    width: 40rem;
-    height: 100vh;
-    margin-top: -0.5rem;
-    margin-left: -13rem;
+.prix{
+    font-size: 1.5rem;
 }
-.bloc-image img{
-    width: 40rem;
-   
+.bloc-1, .bloc-2, .bloc-3, .bloc-4, .bloc-5, .bloc-6{
+    width: 15rem;
 }

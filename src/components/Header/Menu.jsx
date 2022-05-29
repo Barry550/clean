@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import './menu.css'
 
 export default function Menu() {
 
@@ -8,20 +9,26 @@ export default function Menu() {
         window.location = '/connexion'
     }
   return (
+    <div className='header-1'>
      <nav>
-         <div className="menu d-flex justify-content-around pt-3">
-         <div className="nom "><i>FENTEINGNY</i></div>
-             <ul style={{listStyle: 'none'}} className='d-flex justify-content-end h4 '>
-                 <li>
-                     <Link to=""><span className="fas fa-home"></span>Services</Link>
-                 </li>
-                 <li>
-                     <Link to="/pme">PME</Link>
-                 </li>
+         <div className="menu d-inline-flex justify-content-around pt-3">
+         <div className="nom">
+            <ul style={{listStyle: 'none'}}>
+                <li>
+                     <Link to="/">FENTEINGNY</Link>
+                </li>
+            </ul>
+        </div>
+        <div className="onglet">
+        <ul style={{listStyle: 'none'}} className='d-flex justify-content-end h4 '>
+                
+                <li>
+                    <Link to="/pme">PME</Link>
+                </li>
 
-                 <li>
-                     <Link to="/abonnement">Abonnement</Link>
-                 </li>
+                <li>
+                    <Link to="/abonnement">Abonnement</Link>
+                </li>
 
                  <li>
                      <Link to="/compte">connexion ou <br /> Inscription</Link>
@@ -34,6 +41,8 @@ export default function Menu() {
 
          </div>
    
+     </div>
      </nav>
+     </div>
   )
 }

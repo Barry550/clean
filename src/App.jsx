@@ -4,9 +4,7 @@ import Filter from './components/Filter/Filter';
 import Etapes from './components/Etapes/Etapes'
 import Communes from './components/Communes/Communes';
 import Header from './components/Header/Header';
-
 import './../node_modules/bootstrap/dist/css/bootstrap.min.css'
-
 // import { Carousel } from 'bootstrap';
 import DashBord from './components/DashBord/DashBord';
 import {BrowserRouter, Route, Routes, Switch} from 'react-router-dom'
@@ -24,6 +22,7 @@ function App() {
 
   const fristLogin = localStorage.getItem('fristLogin')
   const [user, setUser] = useState(fristLogin)
+
   return (
    <UserContext.Provider value={{user, setUser}}>
       <BrowserRouter>
@@ -34,7 +33,7 @@ function App() {
           <Route path="/pme" component={Pme}/>
           <Route path="/abonnement" component={Abonnement}/>
           <Route path="/compte" component={CreerUnCompte}/> 
-          <Route path="/connexion" component={()=> <Connexion/>}/> 
+          <Route path="/connexion" component={Connexion}/> 
           <Route component={NotFound}/>
          </Switch>
       </BrowserRouter>
