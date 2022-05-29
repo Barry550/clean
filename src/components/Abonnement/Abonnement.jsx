@@ -5,7 +5,7 @@ import Menu from '../Header/Menu'
 export default function Abonnement() {
   return (
     <div className='abonnement-conteneur'>
-        <Menu/>
+        {/* <Menu/> */}
         <hr />
        
        <h1 className='abonnement-titre'> Un abonnement à la hauteur de vos moyens</h1>

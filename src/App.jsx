@@ -17,6 +17,7 @@ import Connexion from './components/CreerUnCompte/Connexion';
 import { useEffect, useState } from 'react';
 import axios from 'axios'
 import {UserContext} from './components/context/Context'
+import Menu from './components/Header/Menu';
 
 function App() {
 
@@ -26,7 +27,7 @@ function App() {
   return (
    <UserContext.Provider value={{user, setUser}}>
       <BrowserRouter>
-      {/* <Header/> */}
+    <Menu/>
         <Switch>
           <Route exact path='/'  component={()=> <Home/>}/>
           {/* <Route path="/dashbord" component={DashBord}/> */}

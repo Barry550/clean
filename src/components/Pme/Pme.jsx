@@ -15,7 +15,7 @@ export default function Pme() {
   const [search, setSearch] = useState('Toute les PME')
   return (
     <div className="conteneur">
-      <Menu/>
+      {/* <Menu/> */}
       <div className='pme-header'>
             <h1>Des pme a votre disposition pour vos services en <span>nettoyage</span> et <span>recyclage</span></h1>
             <p>Choisissez La Pme Qui Vous Convient Et Abonnez Vous</p>
