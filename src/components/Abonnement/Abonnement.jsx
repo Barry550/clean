@@ -6,6 +6,7 @@ export default function Abonnement() {
   return (
     <div className='abonnement-conteneur'>
         <Menu/>
+        <hr />
        
        <h1 className='abonnement-titre'> Un abonnement à la hauteur de vos moyens</h1>
     
@@ -115,15 +116,6 @@ export default function Abonnement() {
                     <button type="button" className="btn btn-lg btn-block btn-success">Contact us</button>
                 </div>
          </div>
-
-
-         <div className="nom">
-            <ul style={{listStyle: 'none'}}>
-                <li>
-                     <Link to="/">Fenteingny</Link>
-                </li>
-            </ul>
-             </div>
         </div>
         
     </div>
