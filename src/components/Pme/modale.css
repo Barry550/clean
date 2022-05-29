@@ -26,10 +26,7 @@
 .modale-texte{
     margin-left: 3rem;
 }
-.modale-texte h1{
-    text-transform: uppercase;
-    
-}
+
 .modale-texte h2{
     background-color: #CFDE1D;
     color: #ffffff;
@@ -57,4 +54,13 @@
     margin-top: 2rem;
     margin-bottom: 0.5rem;
     margin-left: 18rem;
+}
+
+
+.croix{
+    background-color: #CFDE1D;
+    color: #ffffff;
+    width: 7rem;
+    height: 1.7rem;
+    font-size: 1.3rem;
 }

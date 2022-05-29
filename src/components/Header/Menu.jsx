@@ -2,6 +2,11 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 export default function Menu() {
+
+    const deconnect = () =>{
+        localStorage.removeItem('fristLogin')
+        window.location = '/connexion'
+    }
   return (
      <nav>
          <div className="menu d-flex justify-content-around pt-3">
@@ -19,7 +24,11 @@ export default function Menu() {
                  </li>
 
                  <li>
-                     <Link to="/compte">creer un compte</Link>
+                     <Link to="/compte">connexion ou <br /> Inscription</Link>
+                 </li>
+
+                 <li>
+                     <Link  onClick={()=> deconnect()}>deconnexion</Link>
                  </li>
              </ul>
 

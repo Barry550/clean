@@ -1,38 +1,25 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {Link} from 'react-router-dom'
+import { UserContext } from '../context/Context'
 import Menu from './Menu'
 
-
-
-
 export default function Header() {
+
+  const fristLogin = localStorage.getItem('fristLogin')
+
+  const {user} = useContext(UserContext)
+
+  console.log(typeof fristLogin);
   return (
     <header>
     <div className="header-1">
-        <Menu/>
-    {/* //  <nav>
-    //      <div className="menu d-flex justify-content-around pt-3">
-    //      <div className="nom "><i>FENTEINGNY</i></div>
-    //          <ul style={{listStyle: 'none'}} className='d-flex justify-content-end h4 '>
-    //              <li>
-    //                  <Link to=""><span className="fas fa-home"></span>Services</Link>
-    //              </li>
-    //              <li>
-    //                  <Link to="/pme">PME</Link>
-    //              </li>
 
-    //              <li>
-    //                  <Link to="/abonnement">Abonnement</Link>
-    //              </li>
-
-    //              <li>
-    //                  <Link to="/compte">creer un compte</Link>
-    //              </li>
-    //          </ul>
-
-    //      </div>
-   
-     </nav> */}
+      {
+        fristLogin ==  "true" ?  <Menu/> : ''
+      }
+    
+      
+       
     </div>
     <div  className="cta__session">
         <div className="cta__session--button">

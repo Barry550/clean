@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Modale from './Modale'
 
 
@@ -10,6 +10,8 @@ import PmeRecyclage from './PmeRecyclage'
 
 
 export default function Pme() {
+
+  const [search, setSearch] = useState('Toute les PME')
   return (
     <div className="conteneur">
       <div className='pme-header'>
@@ -18,9 +20,10 @@ export default function Pme() {
       </div>
       <div className='barre'>
       <form className="formulaire-search  d-inline-flex ">
-        <select  className='combo-select' name="" id="">
-          <option value="">Ramassages</option>
-          <option value="">Recyclages</option>
+        <select value={search} onChange={(e)=> setSearch(e.target.value)} className='combo-select' name="" id="">
+          <option value='Toute les PME'>Toute les PME</option>
+          <option value='Ramassages'>Ramassages</option>
+          <option value='Recyclages'>Recyclages</option>
         </select>
       {/* <input className="input-search form-control " type="search" placeholder="" aria-label="Search"></input> */}
       <input className='input-tri form-control' type='search'/>
@@ -28,9 +31,15 @@ export default function Pme() {
     </form>
       </div>
        
+       {
+         search === "Toute les PME" ?  <>
+         <PmeRamassage/>
+         <PmeRecyclage/>
+         </> : search === "Ramassages" ? 
+         <PmeRamassage/> :
+          search === "Recyclages" ? <PmeRecyclage/> : ''
+       }
        
-        <PmeRamassage/>
-        <PmeRecyclage/>
 
         <Modale/>
        

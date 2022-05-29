@@ -382,3 +382,20 @@ h2{
   display: block;
 
 }
+
+
+/* produitItems */
+.produ .card{
+  transition: .5s ease-in-out;
+}
+
+.produ:hover .card{
+  opacity: 0.9;
+  box-shadow: 0 5px 5px;
+}
+
+/* Modal */
+
+.asideModal .modale:hover{
+  box-shadow: 0 15px 15px;
+}
