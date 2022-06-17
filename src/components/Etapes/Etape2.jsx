@@ -1,5 +1,5 @@
 import React from 'react'
-import agent2 from './agence.png'
+import agent2 from './deux.png'
 
 export default function Etape2() {
   return (
