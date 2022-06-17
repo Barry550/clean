@@ -18,14 +18,12 @@ export default function Connexion() {
     password: ''
   })
 
-  const params = useParams()
-
  
   const submit = async (e) =>{
     e.preventDefault()
     try {   
       setLoading(true)   
-     const res = await axios.post(`/user/login`,{...data})
+     const res = await axios.post("https://fenteingny-api.deta.dev/user/login", {...data})
      setLoading(false)   
      console.log(res);
      localStorage.setItem('fristLogin', true)
@@ -79,7 +77,7 @@ export default function Connexion() {
         {
           loading ?
           <span style={{display: 'flex' ,justifyContent: 'center'}}>
-                      <ReactLoading type='spin'  color='white' height={30} width={30} />
+             <ReactLoading type='spin'  color='white' height={30} width={30} />
           </span>
            
            :   <span> Connexion</span>
