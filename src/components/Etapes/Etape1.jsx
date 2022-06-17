@@ -15,7 +15,7 @@ export default function Etape1() {
             </p>
         </article>
         <aside className="aside-etape-1">
-            <img src={agent2} alt=""/>
+            <img src={agent2} width="200" height="200" alt=""/>
         </aside>
     </section>
 

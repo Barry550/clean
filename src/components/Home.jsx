@@ -35,8 +35,11 @@ export default function Home({filtering, filtere, abonnes}) {
 
       {
         pme === "ramassage" ? 
-         <PmeRamassage commune={commune} toggle={toggle} data={filtering ? filter : abonnes?.users}/> :
-          pme === "recyclage" ? <PmeRecyclage commune={commune} toggle={toggle} data={filtering ? filter : abonnes?.users}/> : ''
+         <PmeRamassage 
+         commune={commune} toggle={toggle} data={filtering ? filter : abonnes?.users}/> :
+        pme === "recyclage" ? 
+        <PmeRecyclage 
+         commune={commune} toggle={toggle} data={filtering ? filter : abonnes?.users}/> : ''
        }
 
         <Info/>

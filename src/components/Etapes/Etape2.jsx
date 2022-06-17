@@ -5,7 +5,7 @@ export default function Etape2() {
   return (
     <section className="etape-2">
         <aside className="aside-etape-2">
-            <img src={agent2} alt=""/>
+            <img src={agent2} width="200" height="200" alt=""/>
         </aside>
         <article className="article-etape-2">
             <p className="chiffre">
