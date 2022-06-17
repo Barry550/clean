@@ -14,12 +14,12 @@
 .conteneur2-abonnement{
    align-items: center;
    justify-content: center;
-   padding-left: 22rem;
-   padding-right: 20rem;
+   padding-left: 9rem;
+   padding-right: 7rem;
 }
 .p1{
-    padding-left: 1.5rem;
-    width: 55rem;
+    padding-left: 20.5rem;
+    width: 70rem;
 }
 .abonnement-titre{
     text-transform: uppercase;
@@ -47,5 +47,5 @@
     font-size: 1.5rem;
 }
 .bloc-1, .bloc-2, .bloc-3, .bloc-4, .bloc-5, .bloc-6{
-    width: 15rem;
+    width: 25rem;
 }

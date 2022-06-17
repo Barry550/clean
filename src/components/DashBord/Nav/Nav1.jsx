@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Nav1() {
+export default function Nav1({setFiltering, filter}) {
   return (
     <div> <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
     
@@ -11,7 +11,13 @@ export default function Nav1() {
     
     <form className="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
         <div className="input-group">
-            <input className="form-control" type="text" placeholder="Recherche..." aria-label="Recherche ..."
+            <input 
+                onChange={(e)=>{
+                    console.log(e.target.value);
+                     setFiltering(e.target.value.length !== 0)
+                     filter(e.target.value)
+                  }}
+            className="form-control" type="text" placeholder="Recherche..." aria-label="Recherche ..."
                 aria-describedby="btnNavbarSearch" />
             <button className="btn btn-primary" id="btnNavbarSearch" type="button"><i
                     className="fas fa-search"></i></button>

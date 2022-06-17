@@ -3,9 +3,27 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import GlobalStateProvider from './components/global/GlobalState';
+import { composeWithDevTools } from "redux-devtools-extension";
+import thunk from "redux-thunk";
+import { applyMiddleware, createStore } from 'redux';
+// import RootReducer from './components/redux/RootReducer';
+import { Provider } from "react-redux";
+import AbonneReducer from './components/redux/reducers/AbonneReducer'
+
+
+const store = createStore(
+  AbonneReducer,
+  composeWithDevTools(applyMiddleware(thunk))
+)
 
 ReactDOM.render(
-    <App />,
+<Provider store={store}>
+<GlobalStateProvider>
+  <App />
+  </GlobalStateProvider>
+</Provider>
+   ,
   document.getElementById('root')
 );
 

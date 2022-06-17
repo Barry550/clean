@@ -42,3 +42,38 @@
   .menu a:hover{
       color: yellowgreen;
   }
+
+
+
+
+
+  .input-tri{
+    height: 2.7rem;
+    border: none;
+    width: 10rem;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+  }
+
+  .formulaire-search > .input-tri:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+
+  .formulaire-search{
+    position: absolute;
+    top: -0.5rem;
+    left: -5rem;
+    border: 2px solid #165b16;
+    border-radius: 22px/22px;
+    width: 5rem;
+    margin-bottom: 10px;
+  }
+
+  .combo-select{
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border: none;
+    border-right: 1px solid ;
+  }

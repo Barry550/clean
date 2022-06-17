@@ -7,8 +7,8 @@ export default function Produits() {
   return (
     <div className='conteneur'>
         <Articles/>
-        <ModaleRecy/>
-        <ModalVente/>
+        {/* <ModaleRecy/>
+        <ModalVente/> */}
     </div>
   )
 }

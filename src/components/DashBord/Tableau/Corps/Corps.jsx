@@ -1,22 +1,34 @@
 import React from 'react'
-import Body1 from './Body1-3'
-import Body10 from './Body10-12'
-import Body13 from './Body13-15'
-import Body16 from './Body16-18'
-import Body19 from './Body19-21'
-import Body4 from './Body4-6'
-import Body7 from './Body7-9'
+import { useParams } from 'react-router-dom'
+import abonne from '../logo/abonne.jpeg'
+import valider from '../logo/valider.jpeg'
+import desabonne from '../logo/desabonne.jpeg'
 
-export default function Corps() {
+export default function Corps({abonne}) {
+
+  // const {ramassage, recyclage} = useParams()
+
+  // console.log("ramassage: ",ramassage);
+
+
+  // console.log("recyclage: ",recyclage);
   return (
     <tbody>
-      <Body1/>
-      <Body4/>
-      <Body7/>
-      <Body10/>
-      <Body13/>
-      <Body16/>
-      <Body19/>
+
+      <tr>
+      <td>{abonne.pseudo}</td>
+      <td>{abonne.email}</td>
+      <td>{abonne.quartier}</td>
+      <td>{abonne.commune}</td>
+      <td>{abonne.tel}</td>
+    
+    </tr>
+
+
+  
+ 
+  
+    
     </tbody>
   )
 }
